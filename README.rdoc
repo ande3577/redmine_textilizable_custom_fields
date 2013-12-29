@@ -2,6 +2,8 @@
 
 Adds Textile formatting support to "text" and "long text" custom fields.
 
+Redmine version 2.4 and before must use the 2.4_branch.  2.5+ must use master.
+
 == Usage
 
 Go to the *Custom Fields* in the *Administration* section. Add a new or edit existing custom field with "text" or "long text" format.
