@@ -2,7 +2,11 @@
 
 Adds Textile formatting support to "text" and "long text" custom fields.
 
-Redmine version 2.4 and before must use the 2.4_branch.  2.5+ must use master.
+Redmine version 2.3 and before must use the 2.3_branch.
+
+Redmine version 2.4 must use the 2.4_branch or master.  
+
+2.5+ is unsupported. 
 
 == Usage
 

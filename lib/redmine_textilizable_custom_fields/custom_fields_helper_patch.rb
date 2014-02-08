@@ -21,8 +21,8 @@ module RedmineTextilizableCustomFields
         end
         str
       end
-      def custom_field_tag_for_bulk_edit_with_textilizable(name, custom_field, projects=nil)
-        str = custom_field_tag_for_bulk_edit_without_textilizable(name, custom_field, projects)
+      def custom_field_tag_for_bulk_edit_with_textilizable(name, custom_field, projects=nil, value='')
+        str = custom_field_tag_for_bulk_edit_without_textilizable(name, custom_field, projects, value)
         field_format = Redmine::CustomFieldFormat.find_by_name(custom_field.field_format)
         if custom_field.textilizable? && field_format.try(:edit_as) == 'text'
           str += wikitoolbar_for("#{name}_custom_field_values_#{custom_field.id}")
